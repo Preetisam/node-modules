@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>atm appication</h1>
+<h2>The prompt() Method</h2>
+<p>Click the button to Enter your pin.</p>
+<button onclick="getBLANCE()">Enterpin</button>
+<p id="demo"></p>
+<script>
+    class ATM {   
+    constructor(BALANCE, WITHDRAw_CASH){  
+        this.BALANCE=BALANCE;
+        this.WITHDRAw_CASH=WITHDRAw_CASH;
+        
+}
+}
+let atmObj = new ATM("pin","balance");
+balance ="1000";
+function getBLANCE(){
+    let pin = prompt("Type " ,"1234");
+    inputpin = "";
+
+    if (pin == "1234" ) {
+    document.getElementById("demo").innerHTML =
+     balance;
+     setTimeout(() => {
+        console.log("balance");
+    },5000);
+    }else{
+        
+  document.getElementById("demo").innerHTML =
+  "Enter vaid input";
+  }
+}
+</script>
+</body>
+</html>
